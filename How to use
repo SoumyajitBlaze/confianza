@@ -1,0 +1,4 @@
+This is a chat app .Implemented using java in NetBeans IDE.By this communication can be possible.One socket connects to other end.
+shift+F6 for multiple instance of output
+Listen button will be pressed before communication for both side
+source port and destination port will be equal
