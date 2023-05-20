@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="=viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio websitet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9825499740.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo1.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>HR Recruiter & Generalist</p>
+            <h1>Hi,I.m <span>Rina</span><br> Gandhi From Bangalore</h1>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<!---------------------------------------About---------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am an HR professional with 6+ years of experience, I am committed to building strong relationships 
+                    with both employees and management. I have a solid understanding of HR practices and regulations, 
+                    including end-to-end recruitment, onboarding, and employee relations. My excellent communication 
+                    and organizational skills enable me to effectively handle multiple tasks and prioritize projects
+                     to meet deadlines. I am passionate about
+                     fostering a positive work culture and contributing to the growth and success of my organization.
+
+
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>End-to-end Recruitment</span><br>Sourcing,Screening,Interview Scheduling,Following up with managers,Feedback
+                        Salary Negotiation,Document Verification,Offer,Joining Formalities</li>
+                        <li><span>HR Analytics</span><br>Google Studio,Excel,Dashboard Making</li>
+                        <li><span>ATS Softwares</span><br>Recruiterbox,Workday,Workable,GoHire,Vervoe(Screening Software),Perk Payroll
+                        Hr Partner</li>
+                        <li><span>Other HR and IT Skills</span><br>HRIS Management,Payroll Management,LinkedIN Recruiter
+                        Conducting Recruitment drives,Exit Formalities,MS Office(Word,Excel,PowerPoint)</li>
+
+                        
+            
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Aug 2021-Jan 2022</span><br>IT Recruiter at IQVIA(Payroll by Kelly Services)</li>
+                    
+                        <li><span>Oct 2020-Feb 2021</span><br>Non IT Recruiter at Mastree(Unacademy)</li>
+                        <li><span>June 2018-June 2019s</span><br>Recruitment Intern at PayU India</li>
+                        
+                        <li><span>Nov 2013-May 2018</span><br>HR Generalist at Cloudpartner Technologies</li>
+                        
+
+                        
+            
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Advanced HR Course by IHRA(Partner Jain University)</li>
+                        <li><span> 2013</span><br>MBA in HR and Marketing from Nagpur University</li>
+                        <li><span>2010</span><br>BSc in Biotechnology from Nagpur University</li>
+                        
+
+                        
+            
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------Services--------------------------------------->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-user-tie"></i>
+                <h2>End to End Recruitment</h2>
+                <p>End to end recruitment including
+                    Sourcing,Screening,Interview Scheduling,Following up with managers,Feedback
+                        Salary Negotiation,Document Verification,Offer,Joining Formalities
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-credit-card"></i>
+                <h2>Payroll Management</h2>
+                <p>Payroll management of the employee. Calculating salary of an employee
+                    after basic deductions(tax deductions,extra leaves etc.) and process
+                    the salary at the correct time.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-user-tie"></i>
+                <h2>HR Analytics</h2>
+                <p>Analysis of employee behavioral activities,recruitment activities and other activities using excel/google Studio
+                    and making a decision by preparing a dashboard and making perfect visualiztion of metrices.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+</body>
+</html>
